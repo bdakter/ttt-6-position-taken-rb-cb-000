@@ -1,7 +1,7 @@
 
 def position_taken?(board, index)
   # if board[index] == " " or board[index] == "" or board[index] == nil
-  if board[index] in [" ", "", nil]
+  if [" ", "", nil].include? board[index]
     false
   else
     true
